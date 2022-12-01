@@ -1,159 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <title>Document</title>
 </head>
+
 <body>
-    <div>
-    <header class="header">
-        <div class="logo">
-            <img src="./assets/img/5ede4a3fb760540004f2c5e9.png" alt="logo">
-        </div>
-        <div class="nav">
-            <nav>
-                <ul class="header__lista">
-                    <li><a href="./pages/novedades.html">NOVEDADES</a></li>
-                    <li><a href="./pages/comic.html">COMIC</a></li>
-                    <li><a href="./pages/manga.html">MANGA</a></li>
-                    <li><a href="./pages/preventa.html">PREVENTA</a></li>
-                    <li><a href="./pages/contacto.html">CONTACTO</a></li>
-                </ul>
-            </nav>
-        </div>
-        </header>
+  <div class="oferta"><small><p>¡10% DE DESCUENTO EN COMPRAS SUPERIORES A $10000!</p></small></div>
+  <header class="header shadow-lg arriba">
+    <div class="logo">
+      <img src="./assets/img/5ede4a3fb760540004f2c5e9.png" alt="logo">
     </div>
-    <div class="separador"></div>
-    <main class="container">
-        <div id="carouselExampleInterval carousell" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active fondo" data-bs-interval="5000">
-                <img src="./assets/img/posiblefondo.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item fondo" data-bs-interval="2000">
-                <img src="./assets/img/posiblefondo1.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item fondo">
-                <img src="./assets/img/posiblefondo2.jpg" class="d-block w-100" alt="...">
-              </div>
-            </div>
-            
-          </div>
-        <div class="div-logos">
-            <a href="#"><img src="./assets/img/logo1.jpg" alt="" class="div-logos__opacidad"></a>
-            <a href="#"><img src="./assets/img/logo2.jpg" alt="" class="div-logos__opacidad"></a>
-            <a href="#"><img src="./assets/img/logo3.png" alt="" class="div-logos__opacidad"></a>
-            <a v><img src="./assets/img/logo4.png" alt="" class="div-logos__opacidad"></a>
+    <div class="nav">
+      <nav class="d-flex align-items-center">
+        <ul class="header__lista">
+          <li><a href="./pages/novedades.html">NOVEDADES</a></li>
+          <li><a href="./pages/comic.html">COMIC</a></li>
+          <li><a href="./pages/manga.html">MANGA</a></li>
+          <li><a href="./pages/preventa.html">PREVENTA</a></li>
+          <li><a href="./pages/contacto.html">CONTACTO</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
         </div>
-        <div class="cards">
-        <h2 class="cards__titulo1">NOVEDADES</h2>
-            <div class="asd">
-              <div class="card" style="width: 13rem; ">
-                <a href=""><img src="./assets/img/card1.jpg" class="card-img-top" alt="..."></a>
-                <div class="card-body">
-                  <h5 class="card-title">Demon Slayer 00</h5>
-                  <p>$1000</p>
-                  <a href="#" class="btn btn-primary">Añadir al carro</a>
-                </div>
-              </div>
-              <div class="card" style="width: 13rem;">
-                <a href=""><img src="./assets/img/card2.jpg" class="card-img-top" alt="..."></a>
-                <div class="card-body">
-                  <h5 class="card-title">Demon Slayer 00</h5>
-                  <p>$1000</p>
-                  <a href="" class="btn btn-primary">Añadir al carro</a>
-                </div>
-              </div>
-              <div class="card" style="width: 13rem;">
-                <a href=""><img src="./assets/img/card3.jpg" class="card-img-top" alt="..."></a>
-                <div class="card-body">
-                  <h5 class="card-title">Demon Slayer 00</h5>
-                  <p>$1000</p>
-                  <a href="#" class="btn btn-primary">Añadir al carro</a>
-                </div>
-              </div>
-              <div class="card" style="width: 13rem;">
-                <a href="#"><img src="./assets/img/card4.jpg" class="card-img-top" alt="..."></a>
-                <div class="card-body">
-                  <h5 class="card-title">Demon Slayer 00</h5>
-                  <p>$1000</p>
-                  <a href="#" class="btn btn-primary">Añadir al carro</a>
-                </div>
-              </div>
-            </div>
-            <h2 class="cards__titulo2">PREVENTA</h2>
-            <div class="asd1">
-              <div class="card" style="width: 13rem; ">
-                <a href=""><img src="./assets/img/card1.jpg" class="card-img-top" alt="..."></a>
-                <div class="card-body">
-                  <h5 class="card-title">Demon Slayer 00</h5>
-                  <p>$1000</p>
-                  <a href="#" class="btn btn-primary">Añadir al carro</a>
-                </div>
-              </div>
-              <div class="card" style="width: 13rem;">
-                <a href=""><img src="./assets/img/card2.jpg" class="card-img-top" alt="..."></a>
-                <div class="card-body">
-                  <h5 class="card-title">Demon Slayer 00</h5>
-                  <p>$1000</p>
-                  <a href="" class="btn btn-primary">Añadir al carro</a>
-                </div>
-              </div>
-              <div class="card" style="width: 13rem;">
-                <a href=""><img src="./assets/img/card3.jpg" class="card-img-top" alt="..."></a>
-                <div class="card-body">
-                  <h5 class="card-title">Demon Slayer 00</h5>
-                  <p>$1000</p>
-                  <a href="#" class="btn btn-primary">Añadir al carro</a>
-                </div>
-              </div>
-              <div class="card" style="width: 13rem;">
-                <a href="#"><img src="./assets/img/card4.jpg" class="card-img-top" alt="..."></a>
-                <div class="card-body">
-                  <h5 class="card-title">Demon Slayer 00</h5>
-                  <p>$1000</p>
-                  <a href="#" class="btn btn-primary">Añadir al carro</a>
-                </div>
-              </div>
-            </div>
-         </div>
-         <h2 class="noticias">NOTICIAS</h2>
-         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="5000">
-              <img src="./assets/img/FhwbfsgXkAAfV74.jfif" class="d-block w-100 " alt="...">
-            </div>
-            <div class="carousel-item" data-bs-interval="2000">
-              <img src="./assets/img/FiKAy9eWAAEoqWI.jfif" class="d-block w-100 " alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/img/FiKEMBBWIAIRiLv.jfif" class="d-block w-100 " alt="...">
-            </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/img/eji.png" class="d-block w-100 h-75" alt="...">
           </div>
-    </main>
-    <footer>
-      <div class="footer1">
-          <ul>
-              <li><a href="./pages/cambios.html">Cambios</a></li>
-              <li><a href="./pages/comocomprar.html">Como Comprar</a></li>
-              <li><a href="./pages/contacto.html">Contacto</a></li>
-              <li><a href="./pages/quienessomos.html">Quienes somos</a></li>
+          <div class="carousel-item">
+            <img src="./assets/img/eji2.png" class="d-block w-100 h-75" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+    <div class="div-logos">
+      <a href="#"><img src="./assets/img/logo1.jpg" alt="" class="div-logos__opacidad"></a>
+      <a href="#"><img src="./assets/img/logo2.jpg" alt="" class="div-logos__opacidad"></a>
+      <a href="#"><img src="./assets/img/logo3.png" alt="" class="div-logos__opacidad"></a>
+      <a href="#"><img src="./assets/img/logo4.png" alt="" class="div-logos__opacidad"></a>
+    </div>
+    <div class="cards">
+      <h2 class="cards__titulo1">NOVEDADES</h2>
+      <div class="asd">
+        <div class="card" style="width: 13rem; ">
+          <a href=""><img src="./assets/img/card1.jpg" class="card-img-top" alt="..."></a>
+          <div class="card-body">
+            <h5 class="card-title">Demon Slayer 00</h5>
+            <p>$1000</p>
+            <a href="#" class="btn btn-primary">Añadir al carro</a>
+          </div>
+        </div>
+        <div class="card" style="width: 13rem;">
+          <a href=""><img src="./assets/img/card2.jpg" class="card-img-top" alt="..."></a>
+          <div class="card-body">
+            <h5 class="card-title">Demon Slayer 00</h5>
+            <p>$1000</p>
+            <a href="" class="btn btn-primary">Añadir al carro</a>
+          </div>
+        </div>
+        <div class="card" style="width: 13rem;">
+          <a href=""><img src="./assets/img/card3.jpg" class="card-img-top" alt="..."></a>
+          <div class="card-body">
+            <h5 class="card-title">Demon Slayer 00</h5>
+            <p>$1000</p>
+            <a href="#" class="btn btn-primary">Añadir al carro</a>
+          </div>
+        </div>
+        <div class="card" style="width: 13rem;">
+          <a href="#"><img src="./assets/img/card4.jpg" class="card-img-top" alt="..."></a>
+          <div class="card-body">
+            <h5 class="card-title">Demon Slayer 00</h5>
+            <p>$1000</p>
+            <a href="#" class="btn btn-primary">Añadir al carro</a>
+          </div>
+        </div>
+      </div>
+      <h2 class="cards__titulo2">PREVENTA</h2>
+      <div class="asd1">
+        <div class="card" style="width: 13rem; ">
+          <a href=""><img src="./assets/img/card1.jpg" class="card-img-top" alt="..."></a>
+          <div class="card-body">
+            <h5 class="card-title">Demon Slayer 00</h5>
+            <p>$1000</p>
+            <a href="#" class="btn btn-primary">Añadir al carro</a>
+          </div>
+        </div>
+        <div class="card" style="width: 13rem;">
+          <a href=""><img src="./assets/img/card2.jpg" class="card-img-top" alt="..."></a>
+          <div class="card-body">
+            <h5 class="card-title">Demon Slayer 00</h5>
+            <p>$1000</p>
+            <a href="" class="btn btn-primary">Añadir al carro</a>
+          </div>
+        </div>
+        <div class="card" style="width: 13rem;">
+          <a href=""><img src="./assets/img/card3.jpg" class="card-img-top" alt="..."></a>
+          <div class="card-body">
+            <h5 class="card-title">Demon Slayer 00</h5>
+            <p>$1000</p>
+            <a href="#" class="btn btn-primary">Añadir al carro</a>
+          </div>
+        </div>
+        <div class="card" style="width: 13rem;">
+          <a href="#"><img src="./assets/img/card4.jpg" class="card-img-top" alt="..."></a>
+          <div class="card-body">
+            <h5 class="card-title">Demon Slayer 00</h5>
+            <p>$1000</p>
+            <a href="#" class="btn btn-primary">Añadir al carro</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2 class="noticias">NOTICIAS</h2>
+
+    <div class="container">
+      <div id="carouselExampleInterval" class="carousel slide carousel1" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="5000">
+            <img src="./assets/img/FhwbfsgXkAAfV74.jfif" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="./assets/img/FiKAy9eWAAEoqWI.jfif" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/FiKEMBBWIAIRiLv.jfif" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="container">
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-3 my-3 border-top">
+      <div class="col mb-3">
+        <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+          <svg class="bi me-2" width="40" height="32">
+            <use xlink:href="#bootstrap" /></svg>
+        </a>
+        <p class="text-muted">&copy; 2022</p>
+      </div>
+
+      <div class="col mb-3">
+        <h5>MÁS INFORMACIÓN</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="./pages/cambios.html" class="nav-link p-0 text-muted">Cambios</a></li>
+          <li class="nav-item mb-2"><a href="./pages/comocomprar.html" class="nav-link p-0 text-muted">Como Comprar</a>
+          </li>
+          <li class="nav-item mb-2"><a href="./pages/contacto.html" class="nav-link p-0 text-muted">Contacto</a></li>
+          <li class="nav-item mb-2"><a href="./pages/quienessomos.html" class="nav-link p-0 text-muted">Quienes
+              Somos</a></li>
+        </ul>
+      </div>
+
+      <div class="col mb-3">
+        <h5>MEDIOS DE PAGO</h5>
+        <div>
+          <img src="./assets/img/pago1.png" alt="" class="mediopago">
+          <img src="./assets/img/pago2.png" alt=""class="mediopago">
+          <img src="./assets/img/pago3.png" alt=""class="mediopago">
+          <img src="./assets/img/pago4.png" alt=""class="mediopago">
+          <img src="./assets/img/pago5.png" alt=""class="mediopago">
+          <img src="./assets/img/pago6.png" alt=""class="mediopago">
+          <img src="./assets/img/pago7.png" alt=""class="mediopago">
+          <img src="./assets/img/pago8.png" alt=""class="mediopago">
+          <img src="./assets/img/pago9.png" alt=""class="mediopago">
+          <img src="./assets/img/pago10.png" alt=""class="mediopago">
+          <img src="./assets/img/pago11.png" alt=""class="mediopago">
+          <img src="./assets/img/pago12.png" alt=""class="mediopago">
+        </div>
+        <h5 class="formadeenvioh5">FORMAS DE ENVÍO</h5>
+        <img src="./assets/img/envio.png" alt=""class="envio">
+      </div>
+      <div class="col mb-3">
+        <h5>CONTACTANOS</h5>
+        <div class="divemail">
+          <img src="./assets/img/email-logo-png-27.png" alt="" class="logoemail">
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">info@comiqueria.com</a></li>
           </ul>
+        </div>
       </div>
-      <div class="footer2">
-          <img src="./assets/img/facebook.png" alt="" class="redes">
-          <img src="./assets/img/instagram.png" alt="" class="redes">
+
+      <div class="col mb-3">
+        <h5>INFORMACION LEGAL</h5>
+        <ul class="nav flex-column">
+          <img src="./assets/img/Screenshot_72.png" alt="" class="imgfiscal">
+        </ul>
       </div>
-  </footer>
-    <div>
-      <h2 class="copy">&copy; Axel Gallo</h2>
-    </div>
-    <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    </footer>
+  </div>
+  
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+  </script>
 </body>
+
 </html>
