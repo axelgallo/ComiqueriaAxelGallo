@@ -14,47 +14,20 @@
     background-color: brown;
     text-align: center;
 }
-
-.header{
-    display: flex;
-    justify-content: space-around; 
-    background-color: white;
-    
-}
-.stick{
-    position: sticky;
+ /* .stick{
+    position: fixed;
     top: 0;
-    z-index: 99; 
-}
+    z-index: 99;
+    width: 100%; 
+} */
 
-
-.header .logo img{
+.logo{
     height: 100px;
     width: auto;
     margin: 10px 0px;
     
 }
-.header .header__lista{
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
 
-.header .header__lista a{
-    text-decoration: none;
-    color: black;
-}
-
-.nav ul{
-    font-size: 20px;
-    display: flex;
-   
-    
-}
-.nav ul li{
-    justify-content: space-between;
-    margin-right: 30px;
-}
 main {
     display: grid; 
     grid-template-columns: 1fr; 
@@ -72,23 +45,34 @@ main {
      
 }
 
-.div-logos {
-    grid-area: div-logos;
+.div-logos{
     display: flex;
-    justify-content: space-around;
-    padding-top: 25px;
-    padding-bottom: 15px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .div-logos__opacidad{
     opacity: 0.5;
+    width: 100%;
+    max-width: 150px;
+    filter: grayscale(1);
+    transition: filter 0.5s;
 }
 .div-logos__opacidad:hover{
     opacity: 1;
+    filter: grayscale(0);
+}
+.prueba245{
+    display: flex;
+    justify-content: center;
+    
 }
 .cards{
     grid-area: cards;
-    background: rgb(49,48,73);
-background: linear-gradient(90deg, rgba(49,48,73,1) 0%, rgba(246,58,58,1) 35%, rgba(17,41,99,1) 100%);
+    display: flex;
+    
+    
+    
 }
 .noticias{
     grid-area: noticias;
@@ -103,59 +87,6 @@ background: linear-gradient(90deg, rgba(49,48,73,1) 0%, rgba(246,58,58,1) 35%, r
 }
 
 
-
-
-.asd{  
-    display: flex;
-    justify-content: space-around;  
-}
-.asd1{
-    display: flex;
-    justify-content: space-around;
-    padding-bottom: 70px;
-}
-
-.cards__titulo1{
-    color: aliceblue;
-    text-align: center;
-    font-size: 50px;
-    font-weight: bold;
-    padding-top: 25px;
-    margin-bottom: 100PX;
-    
-}
-.cards__titulo2{
-    color: aliceblue;
-    text-align: center;
-    font-size: 50px;
-    font-weight: bold;
-    padding-top: 100px;
-    margin-bottom: 100PX;
-    
-    
-}
-.btn{
-    background-color: black;
-    margin-left: 30px;
-}
-.card-title {
-    text-align: center;
-}
-.card{
-    opacity: 0.8;
-}
-.card:hover{
-    opacity: 1;
-}
-.cards p{
-    text-align: center;
-}
-
-
-
-.copy{
-    text-align: center;
-}
 .main-novedades{
         display: grid; 
         grid-template-columns: 0.5fr 2fr; 
@@ -203,33 +134,46 @@ main section h1{
 
 @media only screen and (max-width: 768px){
     main {
-         
+        display: grid; 
         grid-template-columns: 1fr; 
-        grid-template-rows: 30%fr 20%fr 1fr; 
+        grid-template-rows:  30%fr 20%fr 1fr 1fr fr; 
         gap: 0px 0px; 
         grid-template-areas: 
           "carousell"
           "div-logos"
-          "cards"; 
-
-        background-color: aquamarine;
-          
+          "cards"
+          "noticias"
+          "carousel1";     
       }
-      .carousell{
-        grid-area: carousell; 
-        
-        
+    .carousell {
+        grid-area: carousell;  
     }
-    .div-logos{
-        grid-area: div-logos;
-        
+    
+    .cards{
+        grid-area: cards;
+        display: flex;
+        justify-content: space-evenly;
+    
     }
-    .separador{
-        width: 1000px;
-        height: 20px;
-        background-color: black;
+    .noticias{
+        grid-area: noticias;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        font-size: 50px;
+        font-weight: 900;
     }
-
+    .carousel1{
+        grid-area: carousel1;
+    }
+    .oferta{
+    height: 25px;
+    width: 100%;
+    color: white;
+    background-color: brown;
+    text-align: center;
+    }
+    
 }
 .logoemail{
     width: 25px;
@@ -262,5 +206,19 @@ h5{
     width: 100%;
     color: white;
     background-color: brown;
+    text-align: center;
+} 
+.imgcard{
+    left: 0;
+  top: 0;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 23%, 0 83%);
+  clip-path: polygon(0 0, 100% 0%, 100% 95%, 0 100%);
+  
+      
+}
+.cards h5{
+    text-align: center;
+}
+.cards p{
     text-align: center;
 }
