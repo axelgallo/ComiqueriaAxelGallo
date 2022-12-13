@@ -1,0 +1,8 @@
+@mixin direction-column{
+    display: flex;
+    flex-direction: column;
+}
+@mixin flex-left{
+    align-items: flex-start;
+    text-align: left;
+}

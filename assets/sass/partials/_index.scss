@@ -1,0 +1,156 @@
+@import "variables";
+.carousell{
+    margin-bottom: 10px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5%fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "div-logos"
+      "cards";
+    .div-logos{
+        grid-area: div-logos;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .div-logos__opacidad{
+            max-height: 70px;
+            opacity: 0.5;
+            filter: grayscale(1);
+            transition: filter 0.5s;
+            
+            .div-logos__opacidad:hover{
+                opacity: 1;
+                filter: grayscale(0);
+            }
+        } 
+    }
+    .cards{
+        grid-area: cards;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .card{
+            margin-top: 10px;
+            .imgcard{
+                left: 0;
+                top: 0;
+                -webkit-clip-path: polygon(0 0, 100% 0%, 100% 23%, 0  83%);
+                clip-path: polygon(0 0, 100% 0%, 100% 95%, 0 100%);
+            }
+            .card-body{
+                .btncenter{
+                    width: 110px;
+                  margin-left: 50%;
+                  transform: translateX(-50%);
+                }
+            }
+        }
+        .card h5{
+            text-align: center;
+            font-size: 20px;
+        }
+        .card p{
+            font-size: 30px;
+        }
+    }
+    .cards h5{
+        text-align: center;
+    }
+    .cards p{
+        text-align: center;
+    }
+    
+  }
+
+.imgjunjito{
+    width: 100%;
+    background-repeat: repeat;
+    margin-top: 30px;
+}
+.a-junjito{
+    text-decoration: none;
+    margin-top: 300px;
+    & h3{
+        text-align: center;
+        margin-top: 30px;
+        font-weight: bold;
+        color: rgb(70, 67, 67);
+    }
+}
+.p-junjito{
+    color: rgba(44,62,80,0.8);
+    width: 300px;
+    margin: 0 auto;
+    text-align:center;
+}
+.buttontitulojunjito{
+    position: absolute;
+    left: 50%;
+    margin-bottom: -70px;
+    transform: translate(-50%, -0%);
+    max-width: 95%;
+    color: rgb(255, 255, 255);
+}
+footer h5{
+    font-weight: bold;
+}
+
+.footer2{
+    @include direction-column()
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.footer4{
+    @include direction-column()
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+    .footer3{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .mediopago{
+            width: 45px;
+            height: 30px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+    }
+    .formadeenvioh5{
+        margin: 10px 0;
+    }
+    .envio{
+        width: 65px;
+        height: 28px;
+    }
+}
+.footer5{
+    @include direction-column()
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+    .divemail{
+        .logoemail{
+            width: 25px;
+            height: 25px;
+            margin-right: 5px;
+            float: left;        
+        }
+    }
+}
+.footer6{
+    @include direction-column()
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+    .imgfiscal{
+        width: 60px;
+        height: 90px;   
+    }
+}
