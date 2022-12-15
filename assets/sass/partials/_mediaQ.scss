@@ -45,3 +45,24 @@
         flex-wrap: nowrap;  
     }
 }
+@media screen and (min-width: 768px){
+    .div__main-novedades{
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows:1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+        "aside__main-novedades section__main-novedades"
+        ;
+        .aside__main-novedades{
+            grid-area: aside__main-novedades;
+            
+        }
+        .section__main-novedades{
+            grid-area: section__main-novedades;
+            
+        }  
+    }
+    
+}
