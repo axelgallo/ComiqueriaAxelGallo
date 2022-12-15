@@ -156,8 +156,6 @@ footer h5 {
     grid-area: aside__main-novedades;
     display: flex;
     flex-direction: column; }
-  .div__main-novedades .aside__main-novedades h2 {
-    margin-top: 40px; }
   .div__main-novedades .aside__main-novedades h5 a {
     text-decoration: none; }
   .div__main-novedades .section__main-novedades {
@@ -235,7 +233,7 @@ footer h5 {
   .div__main-novedades {
     display: grid;
     grid-auto-columns: 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.5fr 1fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-template-areas: "aside__main-novedades section__main-novedades"; }
@@ -243,6 +241,23 @@ footer h5 {
       grid-area: aside__main-novedades; }
     .div__main-novedades .section__main-novedades {
       grid-area: section__main-novedades; } }
+
+@media screen and (min-width: 1024px) {
+  .div__main-novedades {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 5px 5px;
+    grid-template-areas: "aside__main-novedades section__main-novedades"; }
+    .div__main-novedades .aside__main-novedades {
+      grid-area: aside__main-novedades; }
+    .div__main-novedades .section__main-novedades {
+      grid-area: section__main-novedades;
+      flex-direction: row; }
+      .div__main-novedades .section__main-novedades .card {
+        margin-top: 1px;
+        margin-bottom: 1px; } }
 
 * {
   box-sizing: border-box;

@@ -164,14 +164,13 @@ footer h5{
     grid-template-areas: 
     "aside__main-novedades"
     "section__main-novedades";
+    
     .aside__main-novedades{
         grid-area: aside__main-novedades;
         display: flex;
         flex-direction: column;
     }  
-    .aside__main-novedades h2{
-        margin-top: 40px;
-    }
+    
     .aside__main-novedades h5 a{
         text-decoration: none;
     }
@@ -183,7 +182,6 @@ footer h5{
         .h2__novedades{
             font-weight: bold;
             font-size: 50px;
-            
         }
         .card{
             margin-top: 10px;
