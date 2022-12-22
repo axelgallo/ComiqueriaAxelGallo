@@ -4,20 +4,26 @@
         justify-content: space-around;
     }
    .footer2{
-    @include flex-left()
+    @include flex-left();
+    }
+   .footer3{
+    
+    
    }
    .footer4{
-    @include flex-left()
-   }
+    @include flex-left();
+    max-width: 200px;
+    }
    .footer5{
-    @include flex-left()
-   }
+    @include flex-left();
+    }
    .footer6{
-    @include flex-left()
-   }
+    @include flex-left();
+    margin-left: 50px;
+    }
    .mediopago{
     margin-left: 10px;
-   }
+    }
     
 }
 @media screen and (min-width: 1024px){
@@ -43,5 +49,70 @@
     }
     .card{
         flex-wrap: nowrap;  
+    }
+}
+@media screen and (min-width: 768px){
+    .div__main-novedades{
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-template-columns: 0.6fr 1fr; 
+        grid-template-rows:1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+        "aside__main-novedades section__main-novedades"
+        ;
+        .aside__main-novedades{
+            grid-area: aside__main-novedades;
+            
+        }
+        .section__main-novedades{
+            grid-area: section__main-novedades;
+            .prueba2{
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            .h2__novedades{
+                text-align: center;
+            }
+            .card{
+                margin-left: 20px;
+            }
+        }  
+    }
+    
+}
+@media screen and (min-width: 1024px){
+    .div__main-novedades{
+        display: grid; 
+        grid-auto-columns: 1fr; 
+        grid-template-columns: 0.3fr 1fr; 
+        grid-template-rows:1fr; 
+        gap: 5px 5px; 
+        grid-template-areas: 
+        "aside__main-novedades section__main-novedades"
+        ;
+        .aside__main-novedades{
+            grid-area: aside__main-novedades;
+            
+            
+            
+        }
+        .section__main-novedades{
+            grid-area: section__main-novedades;
+            .h2__novedades{
+                text-align: center;
+            }
+            .prueba2{
+                flex-direction: row;
+                flex-wrap: wrap;
+                .card{
+                    margin-top: 1px;
+                    margin-bottom: 1px;
+                } 
+            }
+            
+            
+        }    
+        
     }
 }
