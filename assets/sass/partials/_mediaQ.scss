@@ -4,24 +4,6 @@
         justify-content: space-around;
     }
    .footer2{
-<<<<<<< HEAD
-    @include flex-left();
-    }
-   .footer3{
-    
-    
-   }
-   .footer4{
-    @include flex-left();
-    max-width: 200px;
-    }
-   .footer5{
-    @include flex-left();
-    }
-   .footer6{
-    @include flex-left();
-    margin-left: 50px;
-=======
     @include flex-left()
     }
    
@@ -33,7 +15,6 @@
     }
    .footer6{
     @include flex-left()
->>>>>>> ecde25a838daef4291ae3801efd2c8a77e0656d0
     }
    .mediopago{
     margin-left: 10px;

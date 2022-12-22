@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cabin+Condensed&family=Roboto:ital,wght@1,100&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 .header {
   position: sticky;
   top: 0;
@@ -24,7 +23,7 @@
   grid-template-rows: 1fr 5% fr;
   gap: 0px 0px;
   grid-auto-flow: row;
-  grid-template-areas: "div-logos" "cards"; }
+  grid-template-areas: "div-logos" "cards"; }
   .grid .div-logos {
     grid-area: div-logos;
     display: flex;
@@ -151,11 +150,7 @@ footer h5 {
   grid-template-columns: 1fr;
   grid-template-rows: 0.2fr 1fr;
   gap: 0px 0px;
-<<<<<<< HEAD
-  grid-template-areas: "aside__main-novedades" "section__main-novedades"; }
-=======
   grid-template-areas: "aside__main-novedades" "section__main-novedades"; }
->>>>>>> ecde25a838daef4291ae3801efd2c8a77e0656d0
   .div__main-novedades .aside__main-novedades {
     grid-area: aside__main-novedades;
     display: flex;
@@ -194,6 +189,37 @@ footer h5 {
   .div__main-novedades .section__main-novedades p {
     text-align: center; }
 
+.divcontacto h5 {
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold; }
+  .divcontacto h5 a {
+    text-decoration: none;
+    color: #1f1f1f;
+    font-weight: lighter; }
+  .divcontacto h5 a:hover {
+    color: #b41919; }
+
+.divcontacto h1 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold; }
+
+.gridcontacto {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "contactanos" "formulario"; }
+  .gridcontacto .Contactanos {
+    grid-area: contactanos; }
+  .gridcontacto .logoemail1 {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    float: left; }
+
 @media screen and (min-width: 768px) {
   .footer1 {
     display: flex;
@@ -203,15 +229,13 @@ footer h5 {
     text-align: left; }
   .footer4 {
     align-items: flex-start;
-    text-align: left;
-    max-width: 200px; }
+    text-align: left; }
   .footer5 {
     align-items: flex-start;
     text-align: left; }
   .footer6 {
     align-items: flex-start;
-    text-align: left;
-    margin-left: 50px; }
+    text-align: left; }
   .mediopago {
     margin-left: 10px; } }
 
@@ -282,7 +306,7 @@ footer h5 {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Work Sans', sans-serif; }
+  font-family: 'Rubik', sans-serif; }
 
 body {
   background-color: beige; }

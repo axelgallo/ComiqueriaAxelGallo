@@ -219,6 +219,49 @@ footer h5{
     .section__main-novedades p{
         text-align: center;
     }  
-}   
+}
+//CONTACTO 21122022
+
+.divcontacto {
+    h5{
+        text-align: center;
+        font-size: 12px;
+        font-weight: bold;
+        a{
+            text-decoration: none;
+            color: rgb(31, 31, 31);
+            font-weight: lighter;
+        }
+        a:hover{
+            color: rgb(180, 25, 25);
+        }
+    }
+    h1{
+        text-align: center;
+        font-size: 50px;
+        font-weight: bold;
+    }
+    
+}
+.gridcontacto{
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "contactanos"
+    "formulario";
+    .Contactanos{
+        grid-area: contactanos;
+        
+    }
+    .logoemail1{
+        width: 25px;
+        height: 25px;
+        margin-right: 5px;
+        float: left;         
+    }
+}
 
 
