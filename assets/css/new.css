@@ -151,7 +151,11 @@ footer h5 {
   grid-template-columns: 1fr;
   grid-template-rows: 0.2fr 1fr;
   gap: 0px 0px;
+<<<<<<< HEAD
   grid-template-areas: "aside__main-novedades" "section__main-novedades"; }
+=======
+  grid-template-areas: "aside__main-novedades" "section__main-novedades"; }
+>>>>>>> ecde25a838daef4291ae3801efd2c8a77e0656d0
   .div__main-novedades .aside__main-novedades {
     grid-area: aside__main-novedades;
     display: flex;
